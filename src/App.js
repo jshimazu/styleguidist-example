@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navigation from './components/Navigation';
 import Button from './components/Button';
-import './App.css';
+import Counter from './components/Counter';
 
 class App extends Component {
   render() {
@@ -11,6 +11,7 @@ class App extends Component {
         <Button type="danger">click me</Button>
         <Button type="primary">click me</Button>
         <Button>click me</Button>
+        <Counter defaultCount={1} />
       </div>
     );
   }
