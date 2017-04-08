@@ -1,4 +1,5 @@
 module.exports = {
+  title: 'Example Component Style Guide',
   webpackConfig: {
     module: {
       loaders: [

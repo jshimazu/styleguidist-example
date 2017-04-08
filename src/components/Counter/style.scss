@@ -1,0 +1,19 @@
+.Counter {
+  input {
+    height: 3em;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    padding: 0;
+    width: 4em;
+    text-align: center;
+  }
+  button {
+    width: 3em;
+    padding: 0;
+    height: 3em;
+    background: none;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    margin-left: 0.1em;
+  }
+}

@@ -9,12 +9,8 @@ class Counter extends Component {
     defaultCount: PropTypes.number,
   };
 
-  static defaltProps = {
-    defaultCount: 0,
-  };
-
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       count: 0,
     };
@@ -29,7 +25,7 @@ class Counter extends Component {
   render() {
     const count = this.state.count;
     return (
-      <div>
+      <div className="Counter">
         <input type="text" value={count} />
         <button onClick={this.handleClick}>+</button>
       </div>

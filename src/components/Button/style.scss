@@ -1,13 +1,7 @@
 $buttonTypeMap: (
-  default: ( color: #333, backgroundColor: transparent ),
-  danger: ( color: #fff, backgroundColor: #d32c46 ),
-  primary: ( color: #fff, backgroundColor: #009dd8 ),
-);
-
-$buttonSizeMap: (
-  default: 1.5em,
-  small: 1em,
-  large: 2em,
+  default: ( color: #333, backgroundColor: transparent, borderColor: #333 ),
+  danger: ( color: #fff, backgroundColor: #d32c46, borderColor: transparent ),
+  primary: ( color: #fff, backgroundColor: #009dd8, borderColor: transparent ),
 );
 
 .Button {
@@ -15,20 +9,16 @@ $buttonSizeMap: (
   color: #333;
   background-color: #fff;
   border: 1px solid #333;
+  border: 1px solid transparent;
+  width: 8em;
+  padding: 1em;
+  font-size: 1.2em;
 
   @each $type, $row in $buttonTypeMap {
     &[data-type="#{$type}"] {
       color: map-get($row, color);
       background-color: map-get($row, backgroundColor);
-      border: 1px solid transparent;
-    }
-  }
-
-  @each $key, $size in $buttonSizeMap {
-    &[data-size="#{$key}"] {
-      border: 1px solid transparent;
-      width: $size * 4;
-      padding: $size * 0.5;
+      border: 1px solid map-get($row, border);
     }
   }
 }

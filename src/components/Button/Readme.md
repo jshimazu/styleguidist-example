@@ -14,19 +14,3 @@
 ```
 <Button type="danger">Click Me</Button>
 ```
-
-サイズ:小
-
-```
-<Button size="small">Click Me</Button>
-```
-
-サイズ:中
-```
-<Button>Click Me</Button>
-```
-
-サイズ:大
-```
-<Button size="small">Click Me</Button>
-```

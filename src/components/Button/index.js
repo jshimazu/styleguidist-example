@@ -3,15 +3,13 @@ import './style.scss';
 
 class Button extends Component {
   static propTypes = {
-    size: PropTypes.oneOf(['small', 'large']),
     type: PropTypes.oneOf(['danger', 'primary']),
   };
 
   render() {
     const type = this.props.type || 'default';
-    const size = this.props.size || 'default';
     return (
-      <button className="Button" data-type={type} data-size={size}>{this.props.children}</button>
+      <button className="Button" data-type={type}>{this.props.children}</button>
     );
   }
 }
